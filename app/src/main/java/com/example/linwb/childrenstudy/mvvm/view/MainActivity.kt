@@ -25,9 +25,9 @@ class MainActivity : AppCompatActivity() ,IBaseView {
 
     fun initView(){
         val layoutManager = LinearLayoutManager(this)
-        mBinding!!.rvPerson.setLayoutManager(layoutManager)
+        mBinding!!.rvPerson.layoutManager = layoutManager
         mAdapter = PersonAdapter()
-        mBinding!!.rvPerson.setAdapter(mAdapter)
+        mBinding!!.rvPerson.adapter = mAdapter
 
     }
 
